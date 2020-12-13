@@ -110,14 +110,32 @@ b{
     left: 0%;
 }
 #header nav ul{
-    padding: 40px 0;
+    padding: 10%;
 }
 #header nav ul li{
-    margin: 40px;
+    margin: 4rem;
+    position: relative;
 }
 #header nav ul li a{
-    font-size: 4rem;
+    font-size: 2rem;
     color: #333;
+    font-weight: bold;
+    display: block;
+    transition: color 1s;
+}
+#header nav ul li a:hover{
+    color: #C02425;
+}
+#header nav ul li span{
+    display: block;
+    width: 0%;
+    height: 0.5rem;
+    background: #C02425;
+    position: absolute;
+    transition: width 1s;
+}
+#header nav ul li a:hover~span{
+    width: 100%;
 }
 /* header area */
 
@@ -232,6 +250,12 @@ b{
         width: 100%;
     }
     /* common area */
+
+    #header nav{
+        width: 70%;
+        left: -80%;
+    }
+
     /* main area */
     #main {}
     #main .container{}
